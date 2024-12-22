@@ -13,7 +13,7 @@ const setClock = () => {
   minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
 
   const hour = currentTime.getHours();
-  const hourDegrees = (hour / 24) * 360 + 90;
+  const hourDegrees = (hour / 12) * 360 + 90;
   hourHand.style.transform = `rotate(${hourDegrees}deg)`;
 };
 
